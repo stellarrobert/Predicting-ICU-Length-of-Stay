@@ -2,23 +2,20 @@
 
 
 ### Overview
-For hospitals, a patients’ length of stay (LOS) is a major determinant of the cost. Understanding the attributes associated with LOS is vital for any account striving to improve efficiency. Lowering LOS can dramatically reduce costs and increase the number of patients a hospital can treat in a given period of time. 
-Furthermore, the goal was to understand how much predictive information exists on patients’ LOS at the time of admission versus at the time of discharge. 
+For hospitals, a patients’ length of stay (LOS) is a major determinant of the cost. Understanding the attributes associated with LOS is vital for any account striving to improve efficiency. Lowering LOS can dramatically reduce costs and increase the number of patients a hospital can treat in a given period of time. The goal was to understand how much predictive information exists on patients’ LOS at the time of admission versus at the time of discharge, and build machine learning models to predict the LOS from these various health-related metrics.
 
+### Data
 This analysis utilizes the MIMIC-III database. This is a large, publicly-available database curated by MIT, though it does require permission and a training course to gain access. It contains deidentified health-related data associated with over forty thousand patients who stayed in critical care units of the Beth Israel Deaconess Medical Center between 2001 and 2012.
-
 
 ### Files
   * 'MIMIC_LOS_Prediction.ipynb': a Jupyter Notebook containing code and text that loads data, creates features, trains models, and discusses findings
   * 'LICENSE.txt': a document explaining the conditions of proper usage for the MIMIC-III data
-  * Note: the tables for the MIMIC-III database are not included in this repository. For more information on requesting access, please visit     https://mimic.physionet.org/gettingstarted/access/
+  * Note: the tables for the MIMIC-III database are not included in this repository. For more information on requesting access, please visit https://mimic.physionet.org/gettingstarted/access/
 
 ### Results/Conclusion
-This analysis has demonstrated that, given patients' total stay information, we can explain up to 78% of the variance in LOS. However, using just the features available at the time of admission (excluding the to-be-determined number of procedures performed, for instance), we can explain only 61% of the variance with the best model.
-
+This analysis has demonstrated that, given patients' total stay information, we can explain up to 78% of the variance in LOS with an RMSE of 5.96. However, using just the features available at the time of admission (excluding the to-be-determined number of procedures performed, for instance), we can explain only 61% of the variance with the best model with an RMSE of 7.95.
 
 ### References
-
 
   1. Johnson, A., Pollard, T., Mark, R. (2016). MIMIC-III Clinical Database. PhysioNet. doi:10.13026/C2XW26
 

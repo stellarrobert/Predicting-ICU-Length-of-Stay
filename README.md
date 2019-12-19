@@ -13,8 +13,8 @@ This analysis utilizes the MIMIC-III database. This is a large, publicly-availab
   * 'LICENSE.txt': a document explaining the conditions of proper usage for the MIMIC-III data
   * Note: the tables for the MIMIC-III database are not included in this repository. For more information on requesting access, please visit     https://mimic.physionet.org/gettingstarted/access/
 
-### Results
-
+### Results/Conclusion
+This analysis has demonstrated that, given patients' total stay information, we can explain up to 78% of the variance in LOS. However, using just the features available at the time of admission (excluding the to-be-determined number of procedures performed, for instance), we can explain only 61% of the variance with the best model.
 
 
 ### References
